@@ -27,16 +27,6 @@ Chúng tôi chỉ yêu cầu các quyền cần thiết sau:
 - Dữ liệu nhạy cảm (tín ngưỡng, sức khỏe, tài chính)
 - Nội dung người dùng (hình ảnh, tin nhắn)
 
-#### b) Dữ liệu kỹ thuật tự động:
-| Loại dữ liệu          | Mục đích sử dụng                     | Lưu trữ  |
-|-----------------------|--------------------------------------|----------|
-| Mã định danh thiết bị | Phân phối nội dung phù hợp           | 30 ngày  |
-| Thông tin thiết bị*   | Tối ưu hoá trải nghiệm ứng dụng      | Không lưu |
-| Lịch sử tương tác**   | Cải thiện tính năng "Gõ mõ/Niệm Phật"| Trên thiết bị |
-
-*Gồm: Quốc gia, phiên bản OS, độ phân giải màn hình (do Google Play cung cấp)  
-**Chỉ lưu cục bộ trên thiết bị, không đồng bộ lên máy chủ
-
 ---
 
 ### 4. Dịch Vụ Bên Thứ Ba
