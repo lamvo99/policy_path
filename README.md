@@ -1,6 +1,6 @@
 # CHÍNH SÁCH BẢO MẬT
 ## Ứng dụng: PHÁP TU 2.0
-*Cập nhật lần cuối: 19/6/2025
+*Cập nhật lần cuối: 01/07/2025
 
 ---
 
@@ -9,14 +9,16 @@
 - Trang chủ: Hiển thị câu Phật dạy, tính năng **Niệm Phật** (phát âm thanh kinh), **Gõ mõ** (thủ công/tự động)
 - Từ điển: Tra cứu thuật ngữ Phật giáo
 - Lịch âm-dương: Hiển thị sự kiện Phật giáo, có thể nhấn để xem chi tiết  
-🟢 **Cam kết:** Ứng dụng **KHÔNG yêu cầu hoặc thu thập** thông tin cá nhân người dùng.
+🟢 **Cam kết:** Ứng dụng **KHÔNG chủ động thu thập** thông tin cá nhân người dùng. Tuy nhiên, dịch vụ quảng cáo Google AdMob có thể thu thập dữ liệu theo chính sách riêng của họ.
 
 ---
 
 ### 2. Quyền Truy Cập
 Chúng tôi chỉ yêu cầu các quyền cần thiết sau:
 - `INTERNET`: Cập nhật dữ liệu lịch âm-dương và sự kiện từ máy chủ
-- `READ_EXTERNAL_STORAGE` & `WRITE_EXTERNAL_STORAGE`: Lưu/đọc file âm thanh (kinh, mõ) trên bộ nhớ thiết bị  
+- `READ_EXTERNAL_STORAGE` & `WRITE_EXTERNAL_STORAGE`: Lưu/đọc file âm thanh (kinh, mõ) trên bộ nhớ thiết bị
+- ACCESS_NETWORK_STATE: Kiểm tra kết nối mạng để tải quảng cáo
+- AD_ID (Tùy chọn): Truy cập ID quảng cáo để cá nhân hóa quảng cáo (nếu có)"
 🟢 **Khẳng định:** Ứng dụng **KHÔNG sử dụng** các quyền nhạy cảm như camera, microphone, danh bạ, vị trí.
 
 ---
@@ -26,15 +28,18 @@ Chúng tôi chỉ yêu cầu các quyền cần thiết sau:
 - Thông tin cá nhân (tên, email, SĐT, địa chỉ)
 - Dữ liệu nhạy cảm (tín ngưỡng, sức khỏe, tài chính)
 - Nội dung người dùng (hình ảnh, tin nhắn)
-
+Thêm mục (b) về dữ liệu từ bên thứ ba:
+#### b) Dữ liệu do Google AdMob thu thập:
+- Địa chỉ IP, ID thiết bị, loại thiết bị, hành vi xem quảng cáo
+- Dữ liệu này **không được chia sẻ với nhà phát triển** và tuân theo [Chính sách Quyền riêng tư của Google](https://policies.google.com/privacy)
 ---
 
 ### 4. Dịch Vụ Bên Thứ Ba
+- Ứng dụng tích hợp SDK Google AdMob để hiển thị quảng cáo.
 🟢 **Cam kết quan trọng:**  
 - Ứng dụng **KHÔNG tích hợp** SDK phân tích (Google Analytics, Firebase)
-- **KHÔNG có** quảng cáo (AdMob, Facebook Ads)
-- **KHÔNG chia sẻ** dữ liệu với bất kỳ bên thứ ba nào
-- Mọi chức năng đều hoạt động độc lập bằng mã nguồn tự phát triển
+- **KHÔNG chia sẻ** dữ liệu người dùng với bên thứ ba khác ngoài Google AdMob
+- Mọi dữ liệu thu thập bởi AdMob đều tuân theo chính sách của Google
 
 ---
 
@@ -44,6 +49,7 @@ Các biện pháp chúng tôi áp dụng:
 - Sử dụng **Sandboxing** để cách ly dữ liệu ứng dụng
 - Truy cập bộ nhớ ngoài giới hạn trong thư mục riêng của ứng dụng
 - Không lưu trữ nhật ký hoạt động (logs) trên máy chủ
+**Cảnh báo**: "Dữ liệu từ quảng cáo (AdMob) được mã hóa và xử lý bởi Google. Chúng tôi không lưu trữ hoặc kiểm soát dữ liệu này."
 
 ---
 
@@ -66,4 +72,6 @@ Mọi thắc mắc về bảo mật, vui lòng liên hệ:
 - Luật An ninh mạng 2018
 - Nghị định 13/2023/NĐ-CP về bảo vệ dữ liệu cá nhân
 - Chỉ lưu trữ dữ liệu tại trung tâm dữ liệu trong nước (nếu có)
+- Quy định về quảng cáo tại Điều 23, Luật An ninh mạng 2018
+- Chính sách quảng cáo của Google (https://support.google.com/admob/answer/6128543)"*
 
