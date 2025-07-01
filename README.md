@@ -19,7 +19,9 @@ Chúng tôi chỉ yêu cầu các quyền cần thiết sau:
 - `READ_EXTERNAL_STORAGE` & `WRITE_EXTERNAL_STORAGE`: Lưu/đọc file âm thanh (kinh, mõ) trên bộ nhớ thiết bị
 - ACCESS_NETWORK_STATE: Kiểm tra kết nối mạng để tải quảng cáo
 - AD_ID (Tùy chọn): Truy cập ID quảng cáo để cá nhân hóa quảng cáo (nếu có)"
+- **POST_NOTIFICATIONS**: Gửi thông báo nhắc nhở sự kiện Phật giáo, thiền định (chỉ khi người dùng chủ động bật)  
 🟢 **Khẳng định:** Ứng dụng **KHÔNG sử dụng** các quyền nhạy cảm như camera, microphone, danh bạ, vị trí.
+"🟢 Ứng dụng chỉ sử dụng thông báo cho mục đích nhắc nhở tu tập, không gửi quảng cáo hoặc nội dung thương mại."
 
 ---
 
@@ -32,6 +34,10 @@ Thêm mục (b) về dữ liệu từ bên thứ ba:
 #### b) Dữ liệu do Google AdMob thu thập:
 - Địa chỉ IP, ID thiết bị, loại thiết bị, hành vi xem quảng cáo
 - Dữ liệu này **không được chia sẻ với nhà phát triển** và tuân theo [Chính sách Quyền riêng tư của Google](https://policies.google.com/privacy)
+#### c) Dữ liệu liên quan đến thông báo:  
+- Thời gian thiền định/sự kiện do người dùng thiết lập
+- Tần suất nhắc nhở (hàng ngày/tuần)
+- **Không thu thập** nội dung cá nhân hoặc phản hồi từ thông báo  
 ---
 
 ### 4. Dịch Vụ Bên Thứ Ba
@@ -40,6 +46,7 @@ Thêm mục (b) về dữ liệu từ bên thứ ba:
 - Ứng dụng **KHÔNG tích hợp** SDK phân tích (Google Analytics, Firebase)
 - **KHÔNG chia sẻ** dữ liệu người dùng với bên thứ ba khác ngoài Google AdMob
 - Mọi dữ liệu thu thập bởi AdMob đều tuân theo chính sách của Google
+- Thông báo được gửi trực tiếp từ hệ thống thiết bị (không qua SDK bên thứ ba).
 
 ---
 
@@ -49,6 +56,7 @@ Các biện pháp chúng tôi áp dụng:
 - Sử dụng **Sandboxing** để cách ly dữ liệu ứng dụng
 - Truy cập bộ nhớ ngoài giới hạn trong thư mục riêng của ứng dụng
 - Không lưu trữ nhật ký hoạt động (logs) trên máy chủ
+- Dữ liệu lịch nhắc nhở được lưu trữ cục bộ trên thiết bị và có thể xóa bất kỳ lúc nào trong Cài đặt ứng dụng.
 **Cảnh báo**: "Dữ liệu từ quảng cáo (AdMob) được mã hóa và xử lý bởi Google. Chúng tôi không lưu trữ hoặc kiểm soát dữ liệu này."
 
 ---
